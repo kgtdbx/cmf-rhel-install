@@ -1,0 +1,36 @@
+CentOS 6.7 Install Notes
+
+  11  yum install kernal-devel
+   17  yum install kernel-devel
+   19  yum install kernel-devel-2.6.32.573.el6.x86_64
+  103  yum install gcc
+  
+  
+
+
+chkconfig --level 35 sshd on
+
+
+useradd -c "Cloudera Account" -u 1000 -g 500 -G wheel cloudera 
+passwd cloudera --stdin <<< cloudera
+
+
+scp root@10.0.0.118:/etc/init.d
+
+http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/cloudera-manager.repo
+
+
+root@localhost ~]# service iptables save
+iptables: Saving firewall rules to /etc/sysconfig/iptables:[  OK  ]
+[root@localhost ~]# service iptables stop
+iptables: Setting chains to policy ACCEPT: filter          [  OK  ]
+iptables: Flushing firewall rules:                         [  OK  ]
+iptables: Unloading modules:                               [  OK  ]
+[root@localhost ~]# chkconfig iptables off
+[root@localhost ~]# 
+
+/etc/sysctl.conf
+sysctl vm.swappiness=10
+
+/etc/rc.local
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
