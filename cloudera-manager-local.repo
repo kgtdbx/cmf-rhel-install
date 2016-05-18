@@ -1,0 +1,7 @@
+[cloudera-manager]
+# Packages for Cloudera Manager, Version 5, on RedHat or CentOS 6 x86_64           	  
+name=Cloudera Manager
+baseurl=http://192.168.42.102/yum/repo/cloudera-manager/5/
+gpgkey =http://192.168.42.102/yum/repo/cloudera-manager/RPM-GPG-KEY-cloudera    
+gpgcheck = 1
+

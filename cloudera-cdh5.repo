@@ -1,0 +1,6 @@
+[cloudera-cdh5]
+name = Cloudera CDH, Version 5.7
+baseurl = http://192.168.42.102/yum/repo/cloudera-manager/5/
+gpgkey = http://192.168.42.102/yum/repo/cloudera-manager/RPM-GPG-KEY-cloudera
+gpgcheck = 1
+
