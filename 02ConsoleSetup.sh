@@ -8,10 +8,10 @@ do
 
    #commands go here
 
-      scp motc $LOGIN@$node:/etc/motc
-      scp purpose $LOGIN@$node:/etc/purpose
-      scp setconsole $LOGIN@$node:/etc/init.d/setconsole
-      ssh $LOGIN@$node "chkconfig --add setconsole; service setconsole start"
+      echo begin scp motc $LOGIN@$node:/etc/motc
+      echo begin scp purpose $LOGIN@$node:/etc/purpose
+      echo begin |scp setconsole $LOGIN@$node:/etc/init.d/setconsole
+      echo begin | ssh $LOGIN@$node "chkconfig --add setconsole; service setconsole start"
  
     echo END $node
 

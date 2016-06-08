@@ -8,7 +8,7 @@ do
 
    #commands go here
       
-     echo begin | ssh $LOGIN@$node "yum -y install oracle-j2sdk1.7; exit"
+      ssh $LOGIN@$node "[ -f /etc/yum.repos.d/cloudera-manager.repo ] && echo "File exist" || echo "File does not exist""
  
     echo END $node
 
