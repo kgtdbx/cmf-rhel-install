@@ -9,7 +9,7 @@ do
    #commands go here
       
       scp db.sql $LOGIN@$node:db.sql
-      ssh $LOGIN@$node "mysql -u root --password='cloudera' <  db.sql  ;exit;"
+      echo begin | ssh $LOGIN@$node "mysql -u root --password='cloudera' <  db.sql  ;exit;"
 	
    echo END $node
 
