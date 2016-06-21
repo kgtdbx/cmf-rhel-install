@@ -8,8 +8,7 @@ do
 
    #commands go here
       
-    echo begin | ssh $LOGIN@$node "yum -y remove mysql-community*;rm -R -f /var/lib/mysql; exit"
-	
+    echo begin | ssh $LOGIN@$node "useradd --home-dir /data/home/cloudera -u 4200 -g 100 cloudera;"
 	
     echo END $node
 

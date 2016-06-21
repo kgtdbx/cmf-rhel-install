@@ -1,0 +1,15 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+#54.172.82.127	ec2-54-172-82-127.compute-1.amazonaws.com	
+10.0.0.58	ip-10-0-0-58.ec2.internal node0
+#52.91.209.225	ec2-52-91-209-225.compute-1.amazonaws.com	
+10.0.0.60	ip-10-0-0-60.ec2.internal node1
+#54.174.44.186	ec2-54-174-44-186.compute-1.amazonaws.com
+10.0.0.59	ip-10-0-0-59.ec2.internal node2
+#52.87.231.40	ec2-52-87-231-40.compute-1.amazonaws.com	
+10.0.0.62	ip-10-0-0-62.ec2.internal node3
+#52.201.220.2	ec2-52-201-220-2.compute-1.amazonaws.com	
+10.0.0.61	ip-10-0-0-61.ec2.internal node4
+#54.173.52.102	ec2-54-173-52-102.compute-1.amazonaws.com	
+10.0.0.50	ip-10-0-0-50.ec2.internal node5

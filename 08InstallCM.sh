@@ -8,7 +8,7 @@ do
 
    #commands go here
       
-     ssh $LOGIN@$node "yum -y install cloudera-manager-server cloudera-manager-daemons; exit"
+     echo begin | ssh $LOGIN@$node "yum -y install cloudera-manager-server cloudera-manager-daemons; exit"
  
     echo END $node
 

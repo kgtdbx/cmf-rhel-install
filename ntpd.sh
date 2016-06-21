@@ -8,8 +8,7 @@ do
 
    #commands go here
       
-    echo begin | ssh $LOGIN@$node "yum -y remove mysql-community*;rm -R -f /var/lib/mysql; exit"
-	
+    echo begin | ssh $LOGIN@$node "service ntpd start; exit;"
 	
     echo END $node
 

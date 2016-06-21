@@ -4,6 +4,10 @@ create database cm default character set utf8;
 create database rman default character set utf8;
 create database nav default character set utf8;
 create database navm default character set utf8;
+create database amon default character set utf8;
+
+grant all privileges on amon.* to 'amon'@'localhost' identified by 'amon';
+grant all privileges on amon.* to 'amon'@'%' identified by 'amon';
 
 grant all privileges on oozie.* to 'oozie'@'localhost' identified by 'oozie';
 grant all privileges on hive.* to 'hive'@'localhost' identified by 'hive';
