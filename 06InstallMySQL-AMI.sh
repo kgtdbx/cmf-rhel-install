@@ -8,6 +8,8 @@ do
 
    #commands go here
       
+      echo begin| ssh $LOGIN@$node "mkdir -p /data/var/log"
+      echo begin| ssh $LOGIN@$node "chmod -R  777 /data/var/log"
       echo begin| ssh $LOGIN@$node "wget http://repo.mysql.com//mysql57-community-release-el6-7.noarch.rpm;exit;"
       echo begin| ssh $LOGIN@$node "yum -y install mysql57-community-release-el6-7.noarch.rpm;exit;"
       echo begin| ssh $LOGIN@$node "yum-config-manager --disable mysql57-community;exit;"
